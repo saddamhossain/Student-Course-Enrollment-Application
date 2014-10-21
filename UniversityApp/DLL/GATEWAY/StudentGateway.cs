@@ -42,7 +42,6 @@ namespace UniversityApp.DLL.GATEWAY
             {
                 return "Some problem happened";
             }
-         
         }
     }
 }

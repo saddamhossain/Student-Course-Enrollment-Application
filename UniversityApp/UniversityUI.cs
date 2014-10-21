@@ -26,10 +26,11 @@ namespace UniversityApp
         private void courseSaveButton_Click(object sender, System.EventArgs e)
         {
             aCourse = new Course();
-            codeCourseTextBox.Text = aCourse.Code;
-            nameCourseTextBox.Text = aCourse.Name;
-            creditCourseTextBox.Text = aCourse.Credit;
-             
+
+            aCourse.Code = codeCourseTextBox.Text;
+            aCourse.Name = nameCourseTextBox.Text;
+            aCourse.Credit = creditCourseTextBox.Text;
+
             aCourseBll = new CourseBLL();
             string msg =  aCourseBll.Save(aCourse);
             MessageBox.Show(msg);
@@ -40,12 +41,13 @@ namespace UniversityApp
         private void studentSaveButton_Click(object sender, System.EventArgs e)
         {
             aStudent = new Student();
-            studentRegNoTextBox.Text = aStudent.RegNo;
-            emailStudentTextBox.Text = aStudent.Email;
-            addressStudentTextBox.Text = aStudent.Address;
+            aStudent.RegNo = studentRegNoTextBox.Text;
+            aStudent.Email = emailStudentTextBox.Text;
+            aStudent.Address = addressStudentTextBox.Text;
 
             aStudentBll = new StudentBLL();
             string msg = aStudentBll.Save(aStudent);
+            MessageBox.Show(msg);
         }
     }
 }

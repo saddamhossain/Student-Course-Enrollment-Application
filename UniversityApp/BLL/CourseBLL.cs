@@ -16,8 +16,8 @@ namespace UniversityApp.BLL
         public string Save(Course aCourse)
         {
             aCourseGateway = new CourseGateway();
-            string msg =  aCourseGateway.Save(aCourse);
-            return msg;
+            return  aCourseGateway.Save(aCourse);
+            
         }
     }
 }

@@ -16,8 +16,8 @@ namespace UniversityApp.BLL
         public string Save(Student aStudent)
         {
             aStudentGateway = new StudentGateway();
-            string msg = aStudentGateway.Save(aStudent);
-            return msg;
+            return aStudentGateway.Save(aStudent);
+           
         }
     }
 }

@@ -22,12 +22,12 @@ namespace UniversityApp.DLL.GATEWAY
 
         }
 
-        public string Save(Course course)
+        public string Save(Course aCourse)
         {
             CallForConnection();
             connection.Open();
 
-            query = string.Format("INSERT INTO t_Course VALUES ('{0}', '{1}', '{2}')", course.Code, course.Name, course.Credit);
+            query = string.Format("INSERT INTO t_Course VALUES ('{0}', '{1}', '{2}')", aCourse.Code, aCourse.Name, aCourse.Credit);
 
             command = new SqlCommand(query, connection);
 
@@ -42,9 +42,6 @@ namespace UniversityApp.DLL.GATEWAY
             {
                 return "Some problem happened";
             }
-         
-          
-            
         }
     }
 }
