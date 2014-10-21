@@ -14,17 +14,16 @@ namespace UniversityApp.DLL.GATEWAY
         private static SqlConnection connection;
         private static SqlCommand command;
         private static string query;
-        private static void CallForConnection()
+
+        public CourseGateway()
         {
             string conn = ConfigurationManager.ConnectionStrings["UniversityPractice"].ConnectionString;
             connection = new SqlConnection();
             connection.ConnectionString = conn;
-
         }
 
         public string Save(Course aCourse)
         {
-            CallForConnection();
             connection.Open();
 
             query = string.Format("INSERT INTO t_Course VALUES ('{0}', '{1}', '{2}')", aCourse.Code, aCourse.Name, aCourse.Credit);
@@ -46,7 +45,6 @@ namespace UniversityApp.DLL.GATEWAY
 
         public List<Course> GetAllCoursesList()
         {
-            CallForConnection();
             connection.Open();
 
             query = string.Format("SELECT * FROM t_Course");

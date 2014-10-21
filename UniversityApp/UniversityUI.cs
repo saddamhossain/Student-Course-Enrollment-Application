@@ -21,7 +21,9 @@ namespace UniversityApp
         public UniversityUI()
         {
             InitializeComponent();
-            ShowCourseComboBox();
+          //  ShowCourseComboBox();
+          //  ShowStudentRegNoComboBox();
+            
         }
 
 
@@ -39,7 +41,17 @@ namespace UniversityApp
 
         }
 
+        private void ShowStudentRegNoComboBox()
+        {
+            aCourseBll = new CourseBLL();
+            List<Student> aStudentsList = aCourseBll.GetStudentRegNo();
 
+            foreach (Student aStudent in aStudentsList)
+            {
+                studentRegNoComboBox.Items.Add(aStudent);
+            }
+            studentRegNoComboBox.DisplayMember = "RegNo";
+        }
 
 
 
@@ -57,8 +69,6 @@ namespace UniversityApp
             aCourseBll = new CourseBLL();
             string msg =  aCourseBll.Save(aCourse);
             MessageBox.Show(msg);
-
-
         }
 
         private void studentSaveButton_Click(object sender, System.EventArgs e)

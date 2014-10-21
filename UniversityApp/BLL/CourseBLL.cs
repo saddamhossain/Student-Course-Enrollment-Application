@@ -25,5 +25,11 @@ namespace UniversityApp.BLL
             List<Course> aCoursesList = aCourseGateway.GetAllCoursesList();
             return aCoursesList;
         }
+
+        public List<Student> GetStudentRegNo()
+        {
+            List<Student> aStudentsRegList = StudentGateway.GetAllRegNoList();
+            return aStudentsRegList;
+        }
     }
 }
