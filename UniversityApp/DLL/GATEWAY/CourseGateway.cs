@@ -43,5 +43,32 @@ namespace UniversityApp.DLL.GATEWAY
                 return "Some problem happened";
             }
         }
+
+        public List<Course> GetAllCoursesList()
+        {
+            CallForConnection();
+            connection.Open();
+
+            query = string.Format("SELECT * FROM t_Course");
+            command = new SqlCommand(query,connection);
+
+            SqlDataReader aReader = command.ExecuteReader();
+            List<Course> courseList = new List<Course>();
+
+            if (aReader.HasRows)
+            {
+                while (aReader.Read())
+                {
+                    Course aCourse = new Course();
+                    aCourse.Code = aReader[0].ToString();
+                    aCourse.Name = aReader[1].ToString();
+                    aCourse.Credit = aReader[2].ToString();
+                    courseList.Add(aCourse);
+                }
+            }
+            connection.Close();
+            return courseList;
+
+        }
     }
 }

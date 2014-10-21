@@ -19,5 +19,11 @@ namespace UniversityApp.BLL
             return  aCourseGateway.Save(aCourse);
             
         }
+
+        public List<Course> GetCourseNameList()
+        {
+            List<Course> aCoursesList = aCourseGateway.GetAllCoursesList();
+            return aCoursesList;
+        }
     }
 }

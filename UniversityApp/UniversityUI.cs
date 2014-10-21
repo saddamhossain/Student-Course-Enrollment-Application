@@ -21,7 +21,30 @@ namespace UniversityApp
         public UniversityUI()
         {
             InitializeComponent();
+            ShowCourseComboBox();
         }
+
+
+
+        private void ShowCourseComboBox()
+        {
+            aCourseBll = new CourseBLL();
+            List<Course> nameCoursesList = aCourseBll.GetCourseNameList();
+
+            foreach (Course course in nameCoursesList)
+            {
+                courseNameComboBox.Items.Add(course);
+            }
+            courseNameComboBox.DisplayMember = "Name";
+
+        }
+
+
+
+
+
+
+
 
         private void courseSaveButton_Click(object sender, System.EventArgs e)
         {

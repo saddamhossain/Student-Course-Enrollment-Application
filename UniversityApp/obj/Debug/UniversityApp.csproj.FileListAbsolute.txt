@@ -22,3 +22,11 @@ D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\UniversityApp\UniversityApp\bin\Deb
 D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\UniversityApp\UniversityApp\obj\Debug\UniversityApp.UniversityUI.resources
 D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\UniversityApp\UniversityApp\obj\Debug\UniversityApp.Properties.Resources.resources
 D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\UniversityApp\UniversityApp\obj\Debug\UniversityApp.csproj.GenerateResource.Cache
+D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\Project\UniversityApp\UniversityApp\bin\Debug\UniversityApp.exe.config
+D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\Project\UniversityApp\UniversityApp\bin\Debug\UniversityApp.exe
+D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\Project\UniversityApp\UniversityApp\bin\Debug\UniversityApp.pdb
+D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\Project\UniversityApp\UniversityApp\obj\Debug\UniversityApp.UniversityUI.resources
+D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\Project\UniversityApp\UniversityApp\obj\Debug\UniversityApp.Properties.Resources.resources
+D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\Project\UniversityApp\UniversityApp\obj\Debug\UniversityApp.csproj.GenerateResource.Cache
+D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\Project\UniversityApp\UniversityApp\obj\Debug\UniversityApp.exe
+D:\00.  BASIS  .00\DOWNLOAD APP USING GITHUB\Project\UniversityApp\UniversityApp\obj\Debug\UniversityApp.pdb
